@@ -31,4 +31,42 @@
 			offset: function() { return $nav.height(); }
 		});
 
+	// Get the modal elements
+	var modals = document.querySelectorAll('.modal');
+	var modalTriggers = document.querySelectorAll('.modal-trigger');
+	var spans = document.getElementsByClassName("close");
+
+	// Open the modal
+	modalTriggers.forEach(function(trigger) {
+		trigger.onclick = function(event) {
+			event.preventDefault();
+			var modal = document.querySelector(this.getAttribute('href'));
+			modal.style.display = "block";
+			setTimeout(() => {
+				modal.classList.add('show');
+			}, 10); // Slight delay to ensure display:block is applied before adding the show class
+		}
+	});
+
+	// Close the modal
+	for (var i = 0; i < spans.length; i++) {
+		spans[i].onclick = function() {
+			var modal = this.parentElement.parentElement;
+			modal.classList.remove('show');
+			setTimeout(() => {
+				modal.style.display = "none";
+			}, 500); // Match this duration with the CSS transition duration
+		}
+	}
+
+	// Close the modal when clicking outside of it
+	window.onclick = function(event) {
+		if (event.target.classList.contains('modal')) {
+			event.target.classList.remove('show');
+			setTimeout(() => {
+				event.target.style.display = "none";
+			}, 500); // Match this duration with the CSS transition duration
+		}
+	}
+
 })(jQuery);
