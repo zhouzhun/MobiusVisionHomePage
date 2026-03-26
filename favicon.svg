@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MobiusVision">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#122238" />
+      <stop offset="100%" stop-color="#0d1725" />
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f7b68" />
+      <stop offset="100%" stop-color="#ca6234" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)" />
+  <path d="M18 33c0-8.3 6.5-14 14-14 4.8 0 8.1 1.6 12.5 5.6l-4.2 4.2c-2.8-2.5-4.9-3.6-8.3-3.6-4.9 0-8.5 3.4-8.5 7.9S27.1 41 32 41c3.3 0 5.7-1.2 8.6-4.1l4.1 4.1C40.2 45.6 36.8 47 32 47c-7.9 0-14-5.8-14-14Z" fill="url(#ring)" />
+  <circle cx="45" cy="20" r="4" fill="#ca6234" />
+</svg>
