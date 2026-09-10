@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>MobiusVision Social Preview</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <style>
+      body { width: 1200px; height: 630px; padding: 0; }
+      .share-card {
+        width: 100%; height: 100%; padding: 48px 60px; display: flex; flex-direction: column;
+        background: radial-gradient(circle at 95% 0, #d5e7df, transparent 45%),
+          radial-gradient(circle at 0 100%, #f0ddc8, transparent 45%), #fffdf8;
+      }
+      .brand { display: flex; align-items: center; gap: 14px; font-weight: 700; font-size: 24px; }
+      .brand img { width: 42px; height: 42px; }
+      .brand span { margin-left: auto; color: var(--primary); font-size: 15px; letter-spacing: 0.13em; text-transform: uppercase; }
+      .share-content { display: grid; grid-template-columns: 1fr 305px; gap: 48px; align-items: center; flex: 1; }
+      .share-content h1 { font-size: 65px; line-height: 1.08; margin: 0 0 20px; font-weight: 500; }
+      .share-content h1 strong { color: var(--primary); }
+      .share-content p { font-size: 21px; line-height: 1.6; margin: 0; }
+      .portfolio { padding: 26px; border: 1px solid var(--border); border-radius: 20px; background: var(--surface); }
+      .portfolio div + div { border-top: 1px solid var(--border); margin-top: 17px; padding-top: 17px; }
+      .portfolio strong { display: block; font-family: 'Space Grotesk', sans-serif; font-size: 23px; }
+      .portfolio span { display: block; font-size: 16px; color: var(--text); }
+      .share-footer { border-top: 1px solid var(--border); padding-top: 22px; display: flex; justify-content: space-between; align-items: center; font-size: 17px; }
+      .share-footer strong { color: var(--primary); }
+    </style>
+  </head>
+  <body>
+    <main class="share-card">
+      <div class="brand"><img src="../favicon.svg" alt="" />MobiusVision<span>Education Technology</span></div>
+      <div class="share-content">
+        <div>
+          <h1>Technology for<br /><strong>the way we learn.</strong></h1>
+          <p>AI language learning. Research exploration.<br />Custom learning experiences in games and VR / MR.</p>
+        </div>
+        <div class="portfolio">
+          <div><strong>WritingBetter</strong><span>Writing &amp; language learning</span></div>
+          <div><strong>SpeakingBetter</strong><span>Speaking &amp; communication</span></div>
+          <div><strong>Vovo</strong><span>Children's literacy research</span></div>
+        </div>
+      </div>
+      <div class="share-footer"><span>Minecraft / Roblox / Apple Vision Pro / Meta Quest</span><strong>mobiusvision.com</strong></div>
+    </main>
+  </body>
+</html>
